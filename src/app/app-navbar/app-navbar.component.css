@@ -1,0 +1,25 @@
+nav{
+    height: 40px;
+    width: 100%;
+    padding: 5px 15px 5px 15px;
+    background-color: #1893D6;
+    position: fixed;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+nav div{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+nav div a, nav div a:hover{
+    text-decoration: none;
+    color: white;
+}
+nav div ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav div a button{
+    font-size: 16px;
+}
