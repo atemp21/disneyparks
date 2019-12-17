@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularMaterialModule } from './angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
+import { ParkWaitTimeComponent } from './park-wait-time/park-wait-time.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppNavbarComponent
+    AppNavbarComponent,
+    ParkWaitTimeComponent
     ],
   imports: [
     BrowserModule,
