@@ -1,9 +1,10 @@
 const path = require('path')
 const express = require('express')
 const bodyparser = require('body-parser')
-const mongoose = require('mongoose')
+//const mongoose = require('mongoose')
 
 //routes
+const waitRoutes = require("./routes/wait-times")
 
 const app = express()
 
@@ -41,5 +42,6 @@ const app = express()
 
 // app.use("/api/posts", postsRoutes);
 // app.use("/api/user", userRoutes);
+app.use("/api/wait-times", waitRoutes)
 
 module.exports = app
