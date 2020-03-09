@@ -1,6 +1,6 @@
 const Themeparks = require('themeparks')
 const DisneyWorldMagicKingdom = new Themeparks.Parks.WaltDisneyWorldMagicKingdom();
-
+const DisneylandPark = new Themeparks.Parks.DisneylandResortMagicKingdom();
 
 exports.getWaitTimes = (req, res, next)=>{
 
