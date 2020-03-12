@@ -2,16 +2,15 @@ const path = require('path');
 const express = require('express');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
-
+const dbconnectionlocal = "mongodb://127.0.0.1:27017/disney-parks"
+const dbconnection = process.env.MONGODB_URI
 //routes
 const waitRoutes = require("./routes/wait-times");
 
 const app = express();
 
 //db connection
-mongoose.connect(
-    "mongodb://127.0.0.1:27017/disney-parks"
-  )
+mongoose.connect(dbconnection)
   .then(() => {
     console.log("Connected to database!");
   })
