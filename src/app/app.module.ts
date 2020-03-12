@@ -9,6 +9,7 @@ import { AngularMaterialModule } from './angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { ParkWaitTimeComponent } from './park-wait-time/park-wait-time.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,9 @@ import { ParkWaitTimeComponent } from './park-wait-time/park-wait-time.component
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularMaterialModule,
-    HttpClientModule
-    ],
+    HttpClientModule,
+    NgxChartsModule
+      ],
   providers: [],
   bootstrap: [AppComponent]
 })

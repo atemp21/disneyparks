@@ -3,7 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { ParkWaitTimeComponent } from "./park-wait-time/park-wait-time.component";
 
 const routes: Routes = [
-    {path: "wait-times", component: ParkWaitTimeComponent }
+    {path: "", component: ParkWaitTimeComponent }
 ];
 
 @NgModule({

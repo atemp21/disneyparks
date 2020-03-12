@@ -1,2 +1,43 @@
-<p>park-wait-time works!</p>
-<div>{{rides}}</div>
+<div style="margin-bottom: 20px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Disneyland Wait Times</h4>
+                    </div>
+                    <div class="card-body container-fluid">
+                        <div class="chart-wrapper">
+                            <ngx-charts-bar-horizontal [view]="view" [scheme]="colorScheme" [results]="latestDisneyland"
+                                [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend"
+                                [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel"
+                                [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [legend]="legend"
+                                [noBarWhenZero]="noBarWhenZero" [barPadding]="barPadding" [trimYAxisTicks]='trimYAxisTicks'>
+                            </ngx-charts-bar-horizontal>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Disneyworld Wait Times</h4>
+                        </div>
+                        <div class="card-body container-fluid">
+                            <div class="chart-wrapper">
+                                <ngx-charts-bar-horizontal [view]="view" [scheme]="colorScheme" [results]="latestDisneyworld"
+                                    [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend"
+                                    [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel"
+                                    [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [legend]="legend"
+                                    [noBarWhenZero]="noBarWhenZero" [barPadding]="barPadding" [trimYAxisTicks]='trimYAxisTicks'>
+                                </ngx-charts-bar-horizontal>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
