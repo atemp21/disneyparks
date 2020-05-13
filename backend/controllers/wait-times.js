@@ -33,6 +33,7 @@ var j = schedule.scheduleJob('*/30 * * * *', function(){
 
 });
 
+//gets waittimes for Disneyland from Themeparks API and adds them to database
 function getDisneylandTimes(){
 
     let rides = [];
@@ -61,7 +62,10 @@ function getDisneylandTimes(){
     })
 
 }
+// TODO 
+//get wait times from California Adventure
 
+//gets waittimes for DisneyWorld, adds them to database
 function getDisneyworldTimes(){
     let rides = [];
     let currentTime = new Date().getTime()
@@ -88,3 +92,8 @@ function getDisneyworldTimes(){
         console.log(error)
     })
 }
+
+//TODO
+// get wait times for other disney world attractions/parks
+
+

@@ -4,13 +4,14 @@ const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 const dbconnectionlocal = "mongodb://127.0.0.1:27017/disney-parks"
 const dbconnection = process.env.MONGODB_URI
+const dbconnectionheroku = "mongodb://atemp:disney21@ds237357.mlab.com:37357/heroku_9h9bl415"
 //routes
 const waitRoutes = require("./routes/wait-times");
 
 const app = express();
 
 //db connection
-mongoose.connect(dbconnection)
+mongoose.connect(dbconnectionheroku)
   .then(() => {
     console.log("Connected to database!");
   })
